@@ -7,9 +7,10 @@ st.header('A plant and crop disease detection app')
 st.text('')
 img = st.file_uploader(label='Upload leaf image (PNG, JPG or JPEG)', type=['png', 'jpg', 'jpeg'])
 if img is not None:
-    st.image(image=img.read(), caption='Uploaded image')
     predict_button = st.button(label='Predict')
     if predict_button:
+        st.text('')
+        st.image(image=img.read(), caption='Uploaded image')
         prediction_class, prediction_probability = predict(img)
         st.text('')
         st.subheader('Prediction')
