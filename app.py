@@ -9,7 +9,7 @@ st.sidebar.write('Krishi Unnati is a web application which can help you classify
 
 # Instructions section (sidebar)
 st.sidebar.subheader('Instructions to use')
-st.sidebar.write("Using the app is very simple. All you have to do is upload an image of the diseased plant's (or crop's) leaf and click on the Predict button. \
+st.sidebar.write("Using the app is very simple. All you have to do is upload an image of the diseased plant's (or crop's) leaf and click on the __Predict__ button. \
 The app will use machine learning to predict the disease and display the result along with a probability percentage.")
 
 # Information section (sidebar)
