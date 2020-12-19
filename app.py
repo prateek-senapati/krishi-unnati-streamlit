@@ -10,8 +10,8 @@ if img is not None:
     predict_button = st.button(label='Predict')
     if predict_button:
         st.text('')
+        st.text('')
         st.image(image=img.read(), caption='Uploaded image')
         prediction_class, prediction_probability = predict(img)
-        st.text('')
         st.subheader('Prediction')
         st.info(f'Classification: {prediction_class}, Probability: {prediction_probability}%')
